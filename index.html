@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Lunch Time</title>
+	<!-- <link rel="icon" type="image/png" href="imgs/favicon.png"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+	  $(function() {
+	    $( "#token" ).draggable();
+	    $( ".graphBar" ).droppable({
+	      drop: function( event, ui ) {
+        	$(this).animate({"height": "+=30px"});
+	      }
+	    });
+	  });
+  </script>
+</head>
+<body>
+<div id="contentWrapper">
+	<p>Content Wrapper</p>
+	<div id="voteArea">
+		<p style="color: white;">Vote Area</p>
+		<div id="tokenArea">
+			<p>Token Area</p>
+			<div id="token"><p>Drag<br />Me!</p></div>
+		</div>
+		<div id="graphArea">
+			<p>Graph Area</p>
+			<div id="barGraphWrapper">
+				<table>
+					<tr>
+						<td><div class="graphBar"><h1>title</h1><p>Votes: 0</p></div></td>
+						<td><div class="graphBar"><h1>title</h1><p>Votes: 0</p></div></td>
+						<td><div class="graphBar"><h1>title</h1><p>Votes: 0</p></div></td>
+						<td><div class="graphBar"><h1>title</h1><p>Votes: 0</p></div></td>
+						<td><div class="graphBar"><h1>title</h1><p>Votes: 0</p></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="peopleArea">
+			<p>People Area</p>
+			<div class="personButton">[Person's Name]</div>
+		</div>
+	</div>
+	<div id="chatArea"><p>Chat Area</p></div>
+	<div id="footer"><p style="color: white;">Footer</p></div>
+</div>
+</body>
+</html>

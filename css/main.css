@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-align: center;
+}
+
+#contentWrapper {
+	width: 100%;
+	background-color: gray;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+}
+
+#voteArea {
+	width: 100%;
+	height: 550px;
+	padding-bottom: 1px;
+	min-width: 1000px;
+	background-color: black;
+}
+
+#token {
+	background-color: #a9fdbe;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	font: 10px Verdana;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#token p {
+	padding-top: 12px;
+}
+
+#tokenArea {
+	float: left;
+	background-color: #eee;
+	width: 15%;
+	height: 100%;
+	min-width: 150px;
+}
+
+#graphArea {
+	float: left;
+	width: 65%;
+	height: 100%;
+	background-color: aqua;
+}
+
+#barGraphWrapper {
+	text-align: center;
+	padding-top: 10px;
+	border-bottom: 1px solid black;
+	position: relative;
+	bottom: -400px;
+}
+
+#barGraphWrapper table {
+	clear: left;
+	width: 90%;
+	margin-left: auto;
+}
+
+.graphBar {
+	width: 20%;
+	height: 200px;
+	background-color: #2e6bab;
+	min-width: 35px;
+	max-width: 80px;
+	position: absolute;
+	bottom: 0;
+}
+
+.graphBar h1 {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.graphBar p { color: white; }
+
+#peopleArea {
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-color: #9cfb9c; /* light green */
+	text-align: center;
+}
+
+.personButton {
+	display: inline-block;
+	background-color: #ddd;
+}
+
+#chatArea {
+	background-color: pink;
+	clear: both;
+	height: 100px;
+}
+
+#footer {
+	clear: both;
+	background-color: red;
+}
