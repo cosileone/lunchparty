@@ -6,10 +6,13 @@
 html,body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	text-align: center;
+	height: 100%;
 }
 
 #contentWrapper {
 	width: 100%;
+	height: 100%;
+	min-width: 980px;
 	background-color: gray;
 	margin-left: auto;
 	margin-right: auto;
@@ -18,8 +21,9 @@ html,body {
 
 #voteArea {
 	width: 100%;
-	height: 550px;
+	height: 60%;
 	background-color: black;
+	padding-bottom: 100px;
 }
 
 #token {
@@ -27,6 +31,7 @@ html,body {
 	z-index: 1;
 	width: 50px;
 	height: 50px;
+	border: 1px solid #ffbb0d;
 	border-radius: 25px;
 	font: 10px Verdana;
 	display: inline-block;
@@ -36,7 +41,7 @@ html,body {
 	background: -o-linear-gradient(-45deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
 	background: -ms-linear-gradient(-45deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
 	background: linear-gradient(135deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
 }
 
 #token p {
@@ -46,7 +51,7 @@ html,body {
 #tokenArea {
 	float: left;
 	background-color: #eee;
-	width: 15%;
+	width: 17%;
 	height: 100%;
 }
 
@@ -58,21 +63,22 @@ html,body {
 }
 
 #barGraphWrapper {
+	height: 80%;
 	text-align: center;
 	padding-top: 10px;
 	border-bottom: 1px solid #ccc;
 	position: relative;
-	bottom: -400px;
 }
 
 #barGraphWrapper table {
 	clear: left;
 	width: 90%;
 	margin-left: auto;
+	border-collapse: collapse;
 }
 
 .graphBar {
-	width: 20%;
+	width: 100%;
 	height: 20px;
 	background-color: #2e6bab;
 	min-width: 35px;
@@ -101,7 +107,7 @@ html,body {
 
 #peopleArea {
 	float: left;
-	width: 20%;
+	width: 18%;
 	height: 100%;
 	background-color: #eee;
 	text-align: center;
@@ -112,13 +118,24 @@ html,body {
 	background-color: white;
 }
 
+#voteButton {
+	background-color: blue;
+	color: white;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 30px;
+}
+
+#voteButton h2{
+	
+}
+
 #chatArea {
 	background-color: #ddd;
-	clear: both;
 	height: 100px;
 }
 
 #footer {
-	clear: both;
 	background-color: #ccc;
+	color: white;
 }
